@@ -1,0 +1,6 @@
+@GatheringTheMagic.Api_HostAddress = http://localhost:5261
+
+GET {{GatheringTheMagic.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
