@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigurePersistenceApp(builder.Configuration);
 builder.Services.ConfigureApplicationApp();
 builder.Services.ConfigureCorsPolicy();
+builder.Services.ConfigureTelemetry();
 
 builder.Services.AddControllers();
 
@@ -42,6 +43,7 @@ app.MapControllers();
 
 app.Run();
 
+//Cria o banco e as tabelas definidas em AppDbContext
 static void CreateDatabase(WebApplication app)
 {
     var serviceScope = app.Services.CreateScope();

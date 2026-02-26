@@ -25,7 +25,7 @@ public class UsersController: ControllerBase
     [HttpGet]
     public async Task<ActionResult<List<GetAllUserResponse>>> GetAll(CancellationToken cancellationToken)
     {
-        var response = await _mediator.Send(new GetAllUserResponse(), cancellationToken);
+        var response = await _mediator.Send(new GetAllUserRequest(), cancellationToken);
         return Ok(response);
     }
 
