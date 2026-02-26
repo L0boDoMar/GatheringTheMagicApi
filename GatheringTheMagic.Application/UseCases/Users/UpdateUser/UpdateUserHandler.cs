@@ -2,7 +2,7 @@
 using GatheringTheMagic.Domain.Interfaces;
 using MediatR;
 
-namespace GatheringTheMagic.Application.UseCases.UpdateUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public class UpdateUserHandler : IRequestHandler<UpdateUserRequest, UpdateUserResponse>
 {

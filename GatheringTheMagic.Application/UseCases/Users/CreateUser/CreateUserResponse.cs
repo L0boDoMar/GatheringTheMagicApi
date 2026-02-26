@@ -1,4 +1,4 @@
-﻿namespace GatheringTheMagic.Application.UseCases.CreateUser;
+﻿namespace GatheringTheMagic.Application.UseCases.Users;
 
 public sealed record CreateUserResponse
 {

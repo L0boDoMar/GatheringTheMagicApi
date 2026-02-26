@@ -1,4 +1,4 @@
-﻿namespace GatheringTheMagic.Application.UseCases.Users.DeleteUser;
+﻿namespace GatheringTheMagic.Application.UseCases.Users;
 
 public sealed class DeleteUserResponse
 {

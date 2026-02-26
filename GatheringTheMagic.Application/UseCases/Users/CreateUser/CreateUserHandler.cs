@@ -3,7 +3,7 @@ using GatheringTheMagic.Domain.Entities;
 using GatheringTheMagic.Domain.Interfaces;
 using MediatR;
 
-namespace GatheringTheMagic.Application.UseCases.Users.CreateUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public class CreateUserHandler : IRequestHandler<CreateUserRequest, CreateUserResponse>
 {

@@ -1,7 +1,7 @@
 ﻿using GatheringTheMagic.Domain.Entities;
 using AutoMapper;
 
-namespace GatheringTheMagic.Application.UseCases.Users.DeleteUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public sealed class DeleteUserMapper : Profile
 {

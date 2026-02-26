@@ -1,7 +1,4 @@
-﻿using GatheringTheMagic.Application.UseCases.Users.CreateUser;
-using GatheringTheMagic.Application.UseCases.Users.DeleteUser;
-using GatheringTheMagic.Application.UseCases.Users.GetAllUser;
-using GatheringTheMagic.Application.UseCases.Users.UpdateUser;
+﻿using GatheringTheMagic.Application.UseCases.Users;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

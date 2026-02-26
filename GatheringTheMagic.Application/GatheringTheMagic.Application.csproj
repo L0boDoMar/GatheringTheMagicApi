@@ -7,14 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\DeleteUser\**" />
+    <Compile Remove="UseCases\GetAllUser\**" />
+    <Compile Remove="UseCases\UpdateUser\**" />
+    <EmbeddedResource Remove="UseCases\DeleteUser\**" />
+    <EmbeddedResource Remove="UseCases\GetAllUser\**" />
+    <EmbeddedResource Remove="UseCases\UpdateUser\**" />
+    <None Remove="UseCases\DeleteUser\**" />
+    <None Remove="UseCases\GetAllUser\**" />
+    <None Remove="UseCases\UpdateUser\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GatheringTheMagic.Domain\GatheringTheMagic.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Shared\Exceptions\" />
-    <Folder Include="UseCases\DeleteUser\" />
-    <Folder Include="UseCases\GetAllUser\" />
-    <Folder Include="UseCases\UpdateUser\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,15 +1,15 @@
 <Solution>
   <Folder Name="/Core/">
-    <Project Path="../../../../../../../../Dev/git/GatheringTheMagic/Domain/GatheringTheMagic.Domain.csproj" />
-    <Project Path="../../../../../../../../Dev/git/GatheringTheMagic/GatheringTheMagic.Application/GatheringTheMagic.Application.csproj" />
+    <Project Path="GatheringTheMagic.Application/GatheringTheMagic.Application.csproj" />
+    <Project Path="GatheringTheMagic.Domain/GatheringTheMagic.Domain.csproj" />
   </Folder>
   <Folder Name="/Infraestructure/">
-    <Project Path="../../../../../../../../Dev/git/GatheringTheMagic/GatheringTheMagic.Persistence/GatheringTheMagic.Persistence.csproj" />
+    <Project Path="GatheringTheMagic.Persistence/GatheringTheMagic.Persistence.csproj" />
   </Folder>
   <Folder Name="/Presentation/">
-    <Project Path="../../../../../../../../Dev/git/GatheringTheMagic/GatheringTheMagic.Api/GatheringTheMagic.Api.csproj" />
+    <Project Path="GatheringTheMagic.Api/GatheringTheMagic.Api.csproj" />
   </Folder>
   <Folder Name="/Test/">
-    <Project Path="../../../../../../../../Dev/git/GatheringTheMagic/GatheringTheMagic.Tests/GatheringTheMagic.Tests.csproj" />
+    <Project Path="GatheringTheMagic.Tests/GatheringTheMagic.Tests.csproj" />
   </Folder>
 </Solution>

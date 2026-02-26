@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace GatheringTheMagic.Application.UseCases.Users.DeleteUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public class DeleteUserValidator : AbstractValidator<DeleteUserRequest>
 {

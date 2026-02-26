@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace GatheringTheMagic.Application.UseCases.Users.UpdateUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public class UpdateUserValidator : AbstractValidator<UpdateUserRequest>
 {

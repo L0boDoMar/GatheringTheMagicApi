@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace GatheringTheMagic.Application.UseCases.Users.CreateUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public sealed class CreateUserValidator : AbstractValidator<CreateUserRequest>
 {

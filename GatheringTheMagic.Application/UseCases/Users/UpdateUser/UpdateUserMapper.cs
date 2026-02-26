@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using GatheringTheMagic.Domain.Entities;
 
-namespace GatheringTheMagic.Application.UseCases.Users.UpdateUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public sealed class UpdateUserMapper : Profile
 {

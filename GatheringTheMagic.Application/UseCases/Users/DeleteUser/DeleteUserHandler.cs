@@ -2,7 +2,7 @@
 using GatheringTheMagic.Domain.Interfaces;
 using MediatR;
 
-namespace GatheringTheMagic.Application.UseCases.Users.DeleteUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 internal class DeleteUserHandler : IRequestHandler<DeleteUserRequest, DeleteUserResponse>
 {

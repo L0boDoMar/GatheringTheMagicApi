@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace GatheringTheMagic.Application.UseCases.Users.GetAllUser;
+namespace GatheringTheMagic.Application.UseCases.Users;
 
 public class GetAllUserValidator : AbstractValidator<GetAllUserRequest>
 {

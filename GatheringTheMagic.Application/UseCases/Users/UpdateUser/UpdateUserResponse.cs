@@ -1,9 +1,8 @@
-﻿namespace GatheringTheMagic.Application.UseCases.Users.UpdateUser
+﻿namespace GatheringTheMagic.Application.UseCases.Users;
+public class UpdateUserResponse
 {
-    public class UpdateUserResponse
-    {
-        public Guid Id { get; set; }
-        public string? Email { get; set; }
-        public string? Name { get; set; }
-    }
+    public Guid Id { get; set; }
+    public string? Email { get; set; }
+    public string? Name { get; set; }
 }
+
