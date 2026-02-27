@@ -24,7 +24,7 @@ services:
       - "16686:16686" # Interface UI do Jaeger
       - "4317"        # OTLP gRPC (interno para o otel-collector)
 
-  # Prometheus (M�tricas)
+  # Prometheus (Metricas)
   prometheus:
     image: prom/prometheus:latest
     volumes:

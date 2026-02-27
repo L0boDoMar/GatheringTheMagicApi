@@ -41,6 +41,8 @@ app.UseCors();
 
 app.MapControllers();
 
+app.MapPrometheusScrapingEndpoint();
+
 app.Run();
 
 //Cria o banco e as tabelas definidas em AppDbContext
