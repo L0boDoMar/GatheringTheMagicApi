@@ -1,9 +1,15 @@
-using GatheringTheMagic.Persistence.Context;
-using GatheringTheMagic.Persistence;
-using GatheringTheMagic.Application.Services;
 using GatheringTheMagic.Api.Extensions;
+using GatheringTheMagic.Application.ExternalServices;
+using GatheringTheMagic.Application.Services;
+using GatheringTheMagic.Persistence;
+using GatheringTheMagic.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddHttpClient<IHttpClientService, HttpClientService>(client =>
+{
+    client.BaseAddress = new Uri("http://api.magicthegathering.io/v1/");
+});
 
 builder.Services.ConfigurePersistenceApp(builder.Configuration);
 builder.Services.ConfigureApplicationApp();

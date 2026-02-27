@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ExternalServices\DTOS\Request\" />
     <Folder Include="Shared\Exceptions\" />
   </ItemGroup>
 

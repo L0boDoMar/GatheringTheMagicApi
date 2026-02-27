@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using GatheringTheMagic.Application.ExternalServices;
 using GatheringTheMagic.Application.Shared.Behavior;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

@@ -6,7 +6,7 @@ namespace GatheringTheMagic.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UsersController: ControllerBase
+public class UsersController : ControllerBase
 {
     private readonly IMediator _mediator;
 
