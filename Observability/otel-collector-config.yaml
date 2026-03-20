@@ -20,13 +20,24 @@ exporters:
   prometheus:
     endpoint: "0.0.0.0:8889"
 
+  debug:
+    verbosity: detailed
+
+  # NOVO: Exportador nativo OTLP via HTTP apontando para o Loki
+  otlphttp/loki:
+    endpoint: "http://loki:3100/otlp"
+
 service:
   pipelines:
-    traces:
+    traces: # salva traces da api
       receivers: [otlp]
       processors: [batch]
       exporters: [otlp/jaeger]
-    metrics:
+    metrics: # salva metricas da api
       receivers: [otlp]
       processors: [batch]
       exporters: [prometheus]
+    logs: # salva logs da api
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlphttp/loki]

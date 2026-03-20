@@ -1,6 +1,7 @@
 ﻿using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
+using OpenTelemetry.Logs;
 
 namespace GatheringTheMagic.Api.Extensions
 {
@@ -37,7 +38,15 @@ namespace GatheringTheMagic.Api.Extensions
                         opts.Protocol = OpenTelemetry.Exporter.OtlpExportProtocol.Grpc;
                     }).AddPrometheusExporter(); ;
 
-            });
+            })
+            .WithLogging(logging =>
+             {
+                 logging.AddOtlpExporter(opts =>
+                 {
+                     opts.Endpoint = new Uri("http://localhost:4317");
+                     opts.Protocol = OpenTelemetry.Exporter.OtlpExportProtocol.Grpc;
+                 });
+             });
         }
     }
 }
